@@ -1,5 +1,6 @@
 # CycleViewPager
 A ViewPager that can scroll automatically.
+
 ![image](https://github.com/leandom/CycleViewPager/blob/master/image/demo.gif)
 # Gradle Dependency
 add the library to your module build.gradle
