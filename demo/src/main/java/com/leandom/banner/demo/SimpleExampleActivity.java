@@ -16,32 +16,32 @@ import com.leandom.banner.ViewPagerIndicator;
 
 public class SimpleExampleActivity extends AppCompatActivity {
 
-    private CycleViewPager mAutoScrollViewPager;
+    private CycleViewPager mCyclellViewPager;
     private ViewPagerIndicator mIndicator;
-    private SimpleBannerAdapter mAutoScrollPagerAdapter;
+    private SimpleBannerAdapter mPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample_example);
-        mAutoScrollViewPager = (CycleViewPager) findViewById(R.id.banner);
+        mCyclellViewPager = (CycleViewPager) findViewById(R.id.banner);
         mIndicator = (ViewPagerIndicator) findViewById(R.id.viewpager_indicator);
-        mAutoScrollPagerAdapter = new SimpleBannerAdapter(this);
-        mAutoScrollViewPager.setAdapter(mAutoScrollPagerAdapter);
-        mIndicator.bindToViewPager(mAutoScrollViewPager);
+        mPagerAdapter = new SimpleBannerAdapter(this);
+        mCyclellViewPager.setAdapter(mPagerAdapter);
+        mIndicator.bindToViewPager(mCyclellViewPager);
 
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        mAutoScrollViewPager.startAutoScroll();
+        mCyclellViewPager.startAutoScroll();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mAutoScrollViewPager.stopAutoScroll();
+        mCyclellViewPager.stopAutoScroll();
     }
 
     public void workInListView(View view) {
