@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CycleViewPager">
+        <attr name="autoScrollInterval" format="integer"></attr>
+        <attr name="pageSwitchDuration" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="indicatorNormal" format="reference"></attr>
+        <attr name="indicatorSelected" format="reference"></attr>
+        <attr name="indicatorPadding" format="dimension"></attr>
+        <attr name="android:gravity"></attr>
+    </declare-styleable>
+
+
+</resources>
