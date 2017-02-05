@@ -1,6 +1,6 @@
 # CycleViewPager
 A ViewPager that can scroll automatically.
-
+![image](https://github.com/leandom/CycleViewPager/blob/master/image/demo.gif)
 # Gradle Dependency
 add the library to your module build.gradle
 ```
@@ -11,7 +11,7 @@ dependencies {
 
 # Simple Usage
 
-step1:Config in xml
+step1: Config in xml
 ```
 <FrameLayout
     android:layout_width="match_parent"
@@ -38,7 +38,7 @@ step1:Config in xml
 </FrameLayout>
 ``` 
 
-step2:Use in java code
+step2: Use in java code
 
 ```java
 // Implement the CyclePagerAdapter interface
