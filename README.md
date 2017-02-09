@@ -1,7 +1,8 @@
 # CycleViewPager
 A ViewPager that can scroll automatically.
 
-![image](https://github.com/leandom/CycleViewPager/blob/master/image/demo.gif)
+![image](https://github.com/leandom/CycleViewPager/blob/master/image/demo.gif)  
+[Download APK](https://raw.githubusercontent.com/leandom/CycleViewPager/master/demo.apk)
 # Gradle Dependency
 add the library to your module build.gradle
 ```
@@ -12,7 +13,7 @@ dependencies {
 
 # Simple Usage
 
-step1: Config in xml
+## step1: Config in xml
 ```
 <FrameLayout
     android:layout_width="match_parent"
@@ -39,7 +40,7 @@ step1: Config in xml
 </FrameLayout>
 ``` 
 
-step2: Use in java code
+## step2: Use in java code
 
 ```java
 // Implement the CyclePagerAdapter interface
@@ -64,7 +65,7 @@ public class SimpleBannerAdapter extends CyclePagerAdapter {
             convertView = LayoutInflater.from(mContext).inflate(R.layout.banner_item, container, false);
         }
         ImageView imageView = (ImageView) convertView.findViewById(R.id.imageView);
-        imageView.setImageResource(drawableIds[position % drawableIds.length]);
+        imageView.setImageResource(drawableIds[position]);
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
